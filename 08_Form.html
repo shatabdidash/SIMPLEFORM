@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .pri
+        {
+            height: 30px;
+            background-color: blue;
+            color:white;
+            border-radius: 5px;
+        }
+        .pri:focus
+        {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <audio id="musicplayer" autoplay controls>
+        <source src="audio/x.mp3">
+      </audio>
+   
+    <form name="frm" action="abc.php" method="post">
+    <table width="100%" border="0">
+        <tr>
+            <th colspan="4">Registration Form</td>
+        </tr>
+        <tr>
+            <td>User Name</td><td><input type="text" name="t1" autocomplete="off" class="pri"></td>
+            <td>Full Name</td><td><input type="text" name="t2" autocomplete="off" class="pri"></td>
+        
+        </tr>
+        <tr>
+            <td>Password</td><td><input type="password" name="t3" class="pri"></td>
+            <td>Confirm</td><td><input type="password" name="t4" class="pri"></td>
+        </tr>
+        <tr>
+            <td>Age</td><td><input type="number"  max="80" min="18" class="pri"></td>
+            <td>Join Date</td><td><input type="date" name="t5"></td>
+        </tr>
+        <tr>
+            <td>Email Id </td><td><input type="email"></td><td>Phone No</td><td><input type="number" max="9999999999" min="1000000000"></td></tr>
+        <tr>
+            <td colspan="2">
+            <fieldset><legend align="center">Caste</legend>
+                <input type="radio" name="caste">st
+                <input type="radio"  name="caste">sc
+                <input type="radio"  name="caste">Obc
+                <input type="radio" name="caste">Gen
+            </fieldset>    
+            </td>
+            <td colspan="2">
+                <fieldset><legend align="center">Fav Sport</legend>
+                    <input type="checkbox">Cricket
+                    <input type="checkbox">Football
+                    <input type="checkbox">Bad Minton
+                    <input type="checkbox">Tennis
+                </fieldset>    
+                </td>
+        
+        <tr>
+            <td>Country</td><td>
+                <select>
+                    <optgroup label="asia">
+                        <option value="91">India</option>
+                        <option value="92">Pakistan</option>
+                        <option value="93">Sri Lanka</option>
+                        
+                    </optgroup>
+                    <optgroup label="America">
+                        <option>Mexico</option>
+                        <option>Sen Francisco</option>
+                        <option>Chiocago</option>
+                    </optgroup>
+                    <option selected disabled>Select Country</option>
+
+                </select> </td>
+        </tr>
+    </tr>
+    <td colspan="2">
+        <input type="submit" class="pri">
+    </td>
+</tr>
+    </table>
+    </form>
+</body>
+</html>
